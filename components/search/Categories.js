@@ -3,31 +3,31 @@ import React from 'react'
 
 const items = [
   {
-    image: require("/Users/malavpatel/Documents/GA_Tech/CS_4261/Restaurant-Locator-App/assets/images/shopping-bag.png"), 
+    image: require("../../assets/images/shopping-bag.png"),
     text: 'pick-up', 
   }, 
   {
-    image: require("/Users/malavpatel/Documents/GA_Tech/CS_4261/Restaurant-Locator-App/assets/images/soft-drink.png"), 
+    image: require("../../assets/images/soft-drink.png"),
     text: 'Soft Drinks', 
   }, 
   {
-    image: require("/Users/malavpatel/Documents/GA_Tech/CS_4261/Restaurant-Locator-App/assets/images/bread.png"), 
+    image: require("../../assets/images/bread.png"),
     text: 'Bakery Items', 
   }, 
   {
-    image: require("/Users/malavpatel/Documents/GA_Tech/CS_4261/Restaurant-Locator-App/assets/images/fast-food.png"), 
+    image: require("../../assets/images/fast-food.png"),
     text: 'Fast Foods', 
   }, 
   {
-    image: require("/Users/malavpatel/Documents/GA_Tech/CS_4261/Restaurant-Locator-App/assets/images/deals.png"), 
+    image: require("../../assets/images/deals.png"),
     text: 'Deals', 
   }, 
   {
-    image: require("/Users/malavpatel/Documents/GA_Tech/CS_4261/Restaurant-Locator-App/assets/images/coffee.png"), 
+    image: require("../../assets/images/coffee.png"),
     text: 'coffee and tea',
   }, 
   {
-    image: require("/Users/malavpatel/Documents/GA_Tech/CS_4261/Restaurant-Locator-App/assets/images/desserts.png"), 
+    image: require("../../assets/images/desserts.png"),
     text: 'Desserts', 
   }, 
 
