@@ -1,6 +1,6 @@
 
 import {useNavigation} from '@react-navigation/core'
-import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { ImageBackground, KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { auth } from '../firebase'
 
@@ -10,6 +10,8 @@ const LoginScreen = () => {
     const [password, setPassword] = useState('')
 
     const navigation = useNavigation()
+
+    const image = {}
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
@@ -49,6 +51,11 @@ const LoginScreen = () => {
     >
         <View style = {styles.inputContainer}>
             <Text>Restaurant Locator App</Text>
+        </View>
+
+        <View style={styles.container}>
+            <ImageBackground source={require('../assets/images/foodbackground.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+            </ImageBackground>
         </View>
 
         <View style = {styles.inputContainer}>
@@ -137,6 +144,10 @@ const styles = StyleSheet.create({
      buttonText: { 
         fontWeight: '700',
         fontSize: 16, 
-    }, 
+    },
+    backgroundImage:{
+        width: 320,
+        height: 480,
+    },
 
 })
