@@ -4,10 +4,13 @@ import { ImageBackground, KeyboardAvoidingView, StyleSheet, Text, TextInput, Tou
 import React, { useEffect, useState } from 'react'
 import { auth } from '../firebase'
 
+var e; 
+
 const LoginScreen = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    e = email
 
     const navigation = useNavigation()
 
@@ -43,9 +46,10 @@ const LoginScreen = () => {
     }
 
 
+
   return (
     <KeyboardAvoidingView
-        keyboardVerticalOffset = {-500}
+        keyboardVerticalOffset = {-600}
         style = {styles.container}
         behavior = 'padding'
     >
@@ -99,6 +103,8 @@ const LoginScreen = () => {
     </KeyboardAvoidingView>
   )
 }
+
+export {e}; 
 
 export default LoginScreen
 
