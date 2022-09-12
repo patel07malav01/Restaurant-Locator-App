@@ -19,6 +19,7 @@ const LoginScreen = () => {
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
             if (user) {
+                navigation.navigate('Chat')
                 navigation.navigate('Home')
             }
         })
@@ -45,17 +46,12 @@ const LoginScreen = () => {
             .catch(error => alert(error.message))
     }
 
-
-
   return (
     <KeyboardAvoidingView
         keyboardVerticalOffset = {-600}
         style = {styles.container}
         behavior = 'padding'
     >
-        <View style = {styles.inputContainer}>
-            <Text>Restaurant Locator App</Text>
-        </View>
 
         <View style={styles.container}>
             <ImageBackground source={require('../assets/images/foodbackground.jpg')} resizeMode="cover" style={styles.backgroundImage}>
@@ -103,8 +99,6 @@ const LoginScreen = () => {
     </KeyboardAvoidingView>
   )
 }
-
-export {e}; 
 
 export default LoginScreen
 
